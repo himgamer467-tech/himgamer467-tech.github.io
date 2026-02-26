@@ -3,67 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salaar | Web3 Portfolio</title>
+<title>Himanshu | Web3 Portfolio</title>
+
 <link rel="stylesheet" href="styles.css">
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
+
 <body>
 
+<div id="particles-js"></div>
+
 <header>
-<h1 class="logo">SALAAR</h1>
+<h1 class="logo">Himanshu</h1>
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
+<a onclick="showContact()">Contact</a>
 </nav>
 </header>
 
-<section class="hero">
-<h2>I am <span id="typing"></span></h2>
-<p>Building Web3 ecosystems & scaling communities</p>
-<a href="resume.pdf" download class="btn">Download Resume</a>
+<section class="hero" data-aos="fade-up">
+<div class="hero-left">
+<h1>I am <span id="typing"></span></h1>
+<p>Web3 Enthusiast • Community Builder • Blockchain Explorer</p>
+<a href="resume.pdf" class="btn" download>Download Resume</a>
+</div>
+
+<div class="hero-right">
+<img src="profile.webp" alt="Profile">
+</div>
 </section>
 
-<section id="about">
+<section id="about" data-aos="fade-up">
 <h2>About Me</h2>
-<p>Web3 enthusiast focused on blockchain growth and
-community expansion strategies.</p>
+<p>
+Passionate about Web3, blockchain innovation and digital communities.
+Always learning and exploring decentralized technologies.
+</p>
 </section>
 
-<section id="skills">
+<section id="skills" data-aos="fade-up">
 <h2>Skills</h2>
 <div class="cards">
-<div class="card">Blockchain</div>
-<div class="card">community helper</div>
-<div class="card">Community Growth</div>
-<div class="card">HTML • CSS • JS</div>
+<div class="card">Web3 Research</div>
+<div class="card">Community Engagement</div>
+<div class="card">Blockchain Learning</div>
+<div class="card">Basic Web Development</div>
 </div>
 </section>
 
-<section id="projects">
+<section id="projects" data-aos="fade-up">
 <h2>Projects</h2>
 <div class="cards">
-<div class="card">Growth Campaign</div>
-<div class="card">Web3 Growth Strategy</div>
+<div class="card">Personal Portfolio</div>
+<div class="card">Blockchain Learning Journey</div>
 </div>
-</section>
-
-<section id="contact">
-<h2>Contact Me</h2>
-
-<form action="https://formsubmit.co/himgamer467@gmail.com" method="POST">
-<input type="text" name="Salaar" placeholder="SALAAR" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" placeholder="Your Message" required></textarea>
-<button type="submit">Send Message</button>
-</form>
-
 </section>
 
 <footer>
-© 2026 SALAAR | Premium Web3 Portfolio
+© 2026 Himanshu | Personal Portfolio
 </footer>
 
+<!-- Contact Popup -->
+<div id="contactPopup">
+<a href="https://discord.com" target="_blank">Discord</a>
+<a href="https://twitter.com" target="_blank">Twitter</a>
+<a href="https://t.me" target="_blank">Telegram</a>
+</div>
+
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+
 </body>
 </html>
