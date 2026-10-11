@@ -4,11 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Salaar | Web3 Portfolio</title>
+<meta name="description" content="Salaar's Web3 portfolio: dApps on Arc, Solana and Story, plus ecosystem updates from Soneium, Startale, Astar, Arc and Resonance.">
+<meta property="og:title" content="Salaar | Web3 Portfolio">
+<meta property="og:description" content="Web3 builder, community member and blockchain explorer.">
 
 <link rel="stylesheet" href="styles.css">
-
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -16,59 +19,87 @@
 <div id="particles-js"></div>
 
 <header>
-<h1 class="logo">Salaar</h1>
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a onclick="showContact()">Contact</a>
-</nav>
+  <h1 class="logo">Salaar</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#ecosystems">Ecosystems</a>
+    <a href="#updates">Updates</a>
+    <a onclick="showContact()">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
-<h1>I am <span id="typing"></span></h1>
-<p>Web3 Enthusiast • Community Builder • Blockchain Explorer</p>
-
-<div class="hero-right">
-<img src="profile.webp" alt="Profile">
-</div>
+  <h1>I am <span id="typing"></span></h1>
+  <p>Web3 Enthusiast • Community Builder • Blockchain Explorer</p>
+  <div class="hero-right">
+    <img src="profile.webp" alt="Profile">
+  </div>
+  <div class="hero-actions">
+    <a class="btn" href="#projects">View My Work</a>
+    <a class="btn btn-ghost" href="https://x.com/x0_salaar" target="_blank" rel="noopener">Follow on X</a>
+  </div>
 </section>
 
 <section id="about" data-aos="fade-up">
-<h2>About Me</h2>
-<p>
-Passionate about Web3, blockchain innovation and digital communities.
-Always learning and exploring decentralized technologies.
-</p>
+  <h2>About Me</h2>
+  <p>
+    I build web, mobile and blockchain projects on my own, and I spend most of my time
+    around the Arc, Astar, Resonance and Startale/Soneium ecosystems. I like turning
+    ideas into working dApps with real wallet connections and real transactions.
+  </p>
 </section>
 
 <section id="skills" data-aos="fade-up">
-<h2>Skills</h2>
-<div class="cards">
-<div class="card">Web3 Research</div>
-<div class="card">Community Engagement</div>
-<div class="card">Blockchain Learning</div>
-<div class="card">Basic Web Development</div>
-</div>
+  <h2>Skills</h2>
+  <div class="cards">
+    <div class="card">Web3 Research</div>
+    <div class="card">Community Engagement</div>
+    <div class="card">Blockchain Learning</div>
+    <div class="card">Web Development</div>
+    <div class="card">Mobile Apps</div>
+    <div class="card">Solana &amp; EVM dApps</div>
+  </div>
 </section>
 
 <section id="projects" data-aos="fade-up">
-<h2>Projects</h2>
-<div class="cards">
-<div class="card">Personal Portfolio</div>
-<div class="card">Blockchain Learning Journey</div>
-</div>
+  <h2>Projects</h2>
+  <p class="section-sub">Tap a project to see the full details.</p>
+  <div class="cards project-grid" id="projectGrid"></div>
+</section>
+
+<section id="ecosystems" data-aos="fade-up">
+  <h2>Ecosystems I Follow</h2>
+  <p class="section-sub">Official links for the networks I build and explore on.</p>
+  <div class="eco-grid" id="ecoGrid"></div>
+</section>
+
+<section id="updates" data-aos="fade-up">
+  <h2>Ecosystem Updates</h2>
+  <p class="section-sub">Latest posts straight from X.</p>
+  <div class="tabs" id="xTabs"></div>
+  <div class="x-box" id="xBox"></div>
+  <a class="btn btn-ghost" id="xOpen" target="_blank" rel="noopener">Open on X</a>
 </section>
 
 <footer>
-© 2026 Salaar | Personal Portfolio
+  © 2026 Salaar | Personal Portfolio
 </footer>
+
+<!-- Project details modal -->
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modal-box" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
 
 <!-- Contact Popup -->
 <div id="contactPopup">
-<a href="https://discord.com" target="_blank">him09227</a>
-<a href="https://twitter.com" target="_blank">@SALAAR_1717</a>
-<a href="https://t.me" target="_blank">@Mrhima</a>
+  <a href="https://x.com/x0_salaar" target="_blank" rel="noopener">X: @x0_salaar</a>
+  <a href="https://discord.com" target="_blank" rel="noopener">Discord: him09227</a>
+  <a href="https://t.me/Mrhima" target="_blank" rel="noopener">Telegram: @Mrhima</a>
 </div>
 
 <script src="script.js"></script>
